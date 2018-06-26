@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions/>
-  <Default.Personality>
-    <Projects ActiveProject="C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\CharonTestCpp.cbproj"/>
-  </Default.Personality>
+	<Transactions/>
+	<Default.Personality>
+		<Projects ActiveProject="D:\RS10.2Cpp_CharonTest_github\CharonTestCpp.cbproj"/>
+	</Default.Personality>
 </BorlandProject>

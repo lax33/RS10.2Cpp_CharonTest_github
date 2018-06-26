@@ -59,6 +59,7 @@ __published:	// IDE-managed Components
 
 
 
+
 private:	// User declarations
 public:		// User declarations
 
