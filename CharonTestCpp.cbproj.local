@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.951,=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.548,=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018.06.24 21:32:37.003,=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2018.06.24 21:32:42.661,=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018.06.24 21:33:03.792,C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\Unit1.cpp=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018.06.24 21:33:03.792,C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\Unit1.dfm=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2018.06.24 21:33:03.792,C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\Unit1.h=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2018.06.24 21:33:08.878,C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\Project1PCH1.h=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2018.06.24 21:33:24.592,C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\CharonTestCppPCH1.h=C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\Project1PCH1.h</Transaction>
+    <Transaction>2018.06.24 21:33:24.626,C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\CharonTestCpp.cbproj=C:\Users\hag\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2018.06.24 21:36:58.274,C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\Unit1.cpp=</Transaction>
+    <Transaction>2018.06.24 21:38:11.252,=C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\Unit1.cpp</Transaction>
+    <Transaction>2018.06.24 21:39:56.510,=C:\Users\hag\OneDrive\GIT\builder10.2_CharonTest_Cpp_\File1.h</Transaction>
+  </Transactions>
+</BorlandProject>
