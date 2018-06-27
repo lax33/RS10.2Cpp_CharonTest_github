@@ -241,7 +241,7 @@ object Form2: TForm2
     Top = 272
   end
   object IdAntiFreeze1: TIdAntiFreeze
-    Left = 40
+    Left = 32
     Top = 272
   end
 end
