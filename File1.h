@@ -1,11 +1,11 @@
 
    #include <iostream>
    #include <string>
+   using namespace std;
 
 
 
-
-   char *pBuf = "s";   // Буфер передачи
+   char *pBuf;   // Буфер передачи
    int stop;           // Флаг нажатой кнопки "Стоп" 1-нажата 0-не нажата
 
 

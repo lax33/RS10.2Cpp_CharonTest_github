@@ -8,7 +8,7 @@
 #include "File1.h"
 
 #include <Vcl.FileCtrl.hpp>
-
+using namespace std;
 
 //
 //---------------------------------------------------------------------------
@@ -118,7 +118,7 @@ void __fastcall TForm2::Button3Click(TObject *Sender)
 		catch (...)
 		{
 			Edit8->Text = ++bad;
-
+			IdTCPClient1->Disconnect();
 		}
 
 		++i;
