@@ -48,6 +48,7 @@ __published:	// IDE-managed Components
 	TIdAntiFreeze *IdAntiFreeze1;
 	TEdit *Edit9;
 	TLabel *Label11;
+	TLabel *Label12;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall RadioButton1Click(TObject *Sender);

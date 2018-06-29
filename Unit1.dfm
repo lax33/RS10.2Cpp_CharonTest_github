@@ -90,6 +90,13 @@ object Form2: TForm2
     Height = 16
     Caption = #1055#1072#1091#1079#1072' '#1084#1077#1078#1076#1091' '#1089#1086#1077#1076#1080#1085#1077#1085#1080#1103#1084#1080' ('#1084#1089')'
   end
+  object Label12: TLabel
+    Left = 24
+    Top = 232
+    Width = 44
+    Height = 16
+    Caption = 'Label12'
+  end
   object Edit1: TEdit
     Left = 123
     Top = 150

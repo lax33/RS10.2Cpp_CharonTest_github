@@ -28,6 +28,8 @@ __fastcall TForm2::TForm2(TComponent* Owner)
 
 void __fastcall TForm2::Button1Click(TObject *Sender)
 {
+	try
+	{
 		IdTCPClient1->Host = Edit2->Text;  // IP adress
 		IdTCPClient1->Port =  Edit3->Text.ToInt() ;   // Port
 
@@ -43,14 +45,19 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 		Edit1->Text = IdTCPClient1->Socket->ReadLn();
 
 		IdTCPClient1->Disconnect();
-
-
+	   }
+	 catch (...)
+	 {
+	   IdTCPClient1->Disconnect();
+	   Label12->Caption="Не удачно";
+     }
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm2::Button2Click(TObject *Sender)
 {
 	Edit1->Clear();
+    Label12->Caption="" ;
 }
 //---------------------------------------------------------------------------
 
