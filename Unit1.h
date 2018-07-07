@@ -51,6 +51,7 @@ __published:	// IDE-managed Components
 	TLabel *Label12;
 	TRadioButton *RadioButton5;
 	TEdit *Edit10;
+	TLabel *Label13;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall RadioButton1Click(TObject *Sender);

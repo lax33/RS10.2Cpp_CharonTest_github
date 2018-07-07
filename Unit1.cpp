@@ -15,7 +15,14 @@ using namespace std;
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TForm2 *Form2;
+char* wctoansi(UnicodeString us) {
 
+
+	wchar_t* wstr = us.c_str();
+	char* ascii = new char[wcslen(wstr) + 1];
+	wctomb(ascii, *wstr);
+	return ascii;
+}
 
 
 //---------------------------------------------------------------------------
@@ -43,6 +50,8 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 		IdTCPClient1->Socket->WriteLn(pBuf);
 
 		Edit1->Text = IdTCPClient1->Socket->ReadLn();
+
+		pBuf = "";
 
 		IdTCPClient1->Disconnect();
 	   }
@@ -90,12 +99,16 @@ pBuf = "otau_get_channel";
  void __fastcall TForm2::RadioButton5Click(TObject *Sender)
 {
 
-int l = Edit10->Text.Length();
-l=l+1;
-char [l] k =  Edit10->Text;
-UnicodeString ws = Edit10->Text;
-pBuf= AnsiString(ws).c_str();
-   Edit10->Text.c
+//pBuf = wctoansi(Edit10->Text);
+//pBuf = (char*)(Edit10->Text).c_str();
+//Label13->Caption=pBuf;
+//UnicodeString ws = Edit10->Text;
+//Buf =nsiString(ws).c_str();
+wstring w_str(Edit1->Text.c_str()); // c_str() возвращает wchar*
+string str(w_str.begin(), w_str.end());
+pBuf = str.c_str();  // c_str() возвращает const char*
+Label13->Caption=pBuf;
+ //bel13->Caption=ws;
 
 }
 //---------------------------------------------------------------------------

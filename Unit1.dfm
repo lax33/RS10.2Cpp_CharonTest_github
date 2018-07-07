@@ -97,6 +97,13 @@ object Form2: TForm2
     Height = 16
     Caption = 'Label12'
   end
+  object Label13: TLabel
+    Left = 24
+    Top = 264
+    Width = 44
+    Height = 16
+    Caption = 'Label13'
+  end
   object Edit1: TEdit
     Left = 123
     Top = 150
@@ -254,7 +261,9 @@ object Form2: TForm2
     Width = 153
     Height = 24
     TabOrder = 18
-    Text = 'i'
+    Text = '456'
+    TextHint = '789'
+    OnChange = RadioButton5Click
   end
   object IdTCPClient1: TIdTCPClient
     ConnectTimeout = 0
