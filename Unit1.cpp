@@ -21,7 +21,7 @@ char* UcToAscii(UnicodeString us)
 	wchar_t* wstr = us.c_str();
 	char* ascii = new char[wcslen(wstr) + 1];
 
-	int i;
+	unsigned int i;
 	for( i=0; i<=strlen(ascii); i++)
 	{
 	  ascii[i]=(char)wstr[i];
