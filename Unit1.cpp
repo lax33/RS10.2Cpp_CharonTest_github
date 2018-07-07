@@ -60,7 +60,7 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 		Edit1->Text = IdTCPClient1->Socket->ReadLn();
 
 		IdTCPClient1->Disconnect();
-		IdTCPClient1->Socket->Close();
+
 	  }
 
 	 catch (...)

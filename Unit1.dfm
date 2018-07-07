@@ -246,7 +246,6 @@ object Form2: TForm2
     Width = 113
     Height = 17
     TabOrder = 17
-    OnClick = RadioButton5Click
   end
   object Edit10: TEdit
     Left = 376
