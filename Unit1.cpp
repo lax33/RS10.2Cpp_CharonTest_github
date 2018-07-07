@@ -3,7 +3,7 @@
 #include <vcl.h>
 #pragma hdrstop
 #include <stdexcept>
-
+#include <string>
 #include "Unit1.h"
 #include "File1.h"
 
@@ -87,7 +87,21 @@ pBuf = "otau_get_channel";
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm2::Button3Click(TObject *Sender)
+ void __fastcall TForm2::RadioButton5Click(TObject *Sender)
+{
+
+int l = Edit10->Text.Length();
+l=l+1;
+char [l] k =  Edit10->Text;
+UnicodeString ws = Edit10->Text;
+pBuf= AnsiString(ws).c_str();
+   Edit10->Text.c
+
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm2::Button3Click(TObject *Sender) // кнопка "Start"
 {
  //Zikl zicl = new Zicl ();
  //TThread::zikl(false);
@@ -142,6 +156,13 @@ void __fastcall TForm2::Button4Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
   //nmn
+
+
+
+
+
+
+
 
 
 

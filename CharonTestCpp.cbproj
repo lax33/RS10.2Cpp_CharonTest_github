@@ -6,7 +6,7 @@
         <AppType>Application</AppType>
         <MainSource>CharonTestCpp.cpp</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Release</Config>
+        <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>1</TargetedPlatforms>
     </PropertyGroup>
@@ -112,10 +112,11 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
         <DynamicRTL>false</DynamicRTL>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Build>17</VerInfo_Build>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.1.17;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>34</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.1.34;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <LinkPackageStatics>rtl.lib;vcl.lib;vclx.lib;IndySystem.lib;IndyCore.lib;vclimg.lib;xmlrtl.lib;vclactnband.lib</LinkPackageStatics>
         <UsePackages>false</UsePackages>
+        <_TCHARMapping>char</_TCHARMapping>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>
@@ -123,9 +124,9 @@
     </PropertyGroup>
     <Import Project="Win32\Debug\1.optset" Condition="'$(Cfg_2_Win32)'!='' And Exists('Win32\Debug\1.optset')"/>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <VerInfo_Build>15</VerInfo_Build>
+        <VerInfo_Build>16</VerInfo_Build>
         <LinkPackageStatics>rtl.lib;vcl.lib;vclx.lib;IndySystem.lib;IndyCore.lib;vclimg.lib;xmlrtl.lib;vclactnband.lib</LinkPackageStatics>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.1.15;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.1.16;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
         <CfgDependentOn>Win32\Debug\1.optset</CfgDependentOn>
     </PropertyGroup>

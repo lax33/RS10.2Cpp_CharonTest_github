@@ -2,7 +2,7 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 300
+  ClientHeight = 354
   ClientWidth = 565
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -64,28 +64,28 @@ object Form2: TForm2
   end
   object Label8: TLabel
     Left = 283
-    Top = 192
+    Top = 245
     Width = 147
     Height = 16
     Caption = #1054#1073#1097'. '#1082#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1094#1080#1082#1083#1086#1074
   end
   object Label9: TLabel
     Left = 388
-    Top = 227
+    Top = 270
     Width = 42
     Height = 16
     Caption = #1059#1076#1072#1095#1085#1086
   end
   object Label10: TLabel
     Left = 374
-    Top = 252
+    Top = 300
     Width = 56
     Height = 16
     Caption = #1053#1077#1091#1076#1072#1095#1085#1086
   end
   object Label11: TLabel
-    Left = 266
-    Top = 153
+    Left = 283
+    Top = 210
     Width = 192
     Height = 16
     Caption = #1055#1072#1091#1079#1072' '#1084#1077#1078#1076#1091' '#1089#1086#1077#1076#1080#1085#1077#1085#1080#1103#1084#1080' ('#1084#1089')'
@@ -183,8 +183,8 @@ object Form2: TForm2
     OnClick = RadioButton3Click
   end
   object Button3: TButton
-    Left = 341
-    Top = 112
+    Left = 374
+    Top = 169
     Width = 75
     Height = 25
     Caption = 'Start'
@@ -192,8 +192,8 @@ object Form2: TForm2
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 432
-    Top = 113
+    Left = 482
+    Top = 169
     Width = 75
     Height = 25
     Caption = 'Stop'
@@ -202,14 +202,14 @@ object Form2: TForm2
   end
   object Edit6: TEdit
     Left = 436
-    Top = 189
+    Top = 237
     Width = 121
     Height = 24
     TabOrder = 12
   end
   object Edit7: TEdit
     Left = 436
-    Top = 219
+    Top = 267
     Width = 121
     Height = 24
     TabOrder = 13
@@ -217,7 +217,7 @@ object Form2: TForm2
   end
   object Edit8: TEdit
     Left = 436
-    Top = 249
+    Top = 297
     Width = 121
     Height = 24
     TabOrder = 14
@@ -226,29 +226,46 @@ object Form2: TForm2
   object RadioButton4: TRadioButton
     Left = 360
     Top = 77
-    Width = 113
+    Width = 137
     Height = 17
     Caption = 'otau_get_channel'
     TabOrder = 15
     OnClick = RadioButton4Click
   end
   object Edit9: TEdit
-    Left = 472
-    Top = 144
+    Left = 500
+    Top = 207
     Width = 57
     Height = 24
     TabOrder = 16
     Text = '500'
+  end
+  object RadioButton5: TRadioButton
+    Left = 360
+    Top = 100
+    Width = 113
+    Height = 17
+    TabOrder = 17
+    OnClick = RadioButton5Click
+  end
+  object Edit10: TEdit
+    Left = 376
+    Top = 100
+    Width = 153
+    Height = 24
+    TabOrder = 18
+    Text = 'i'
   end
   object IdTCPClient1: TIdTCPClient
     ConnectTimeout = 0
     IPVersion = Id_IPv4
     Port = 0
     ReadTimeout = -1
-    Top = 272
+    Left = 16
+    Top = 304
   end
   object IdAntiFreeze1: TIdAntiFreeze
-    Left = 32
-    Top = 272
+    Left = 88
+    Top = 304
   end
 end

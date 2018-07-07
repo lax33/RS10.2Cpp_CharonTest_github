@@ -49,6 +49,8 @@ __published:	// IDE-managed Components
 	TEdit *Edit9;
 	TLabel *Label11;
 	TLabel *Label12;
+	TRadioButton *RadioButton5;
+	TEdit *Edit10;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall RadioButton1Click(TObject *Sender);
@@ -57,6 +59,7 @@ __published:	// IDE-managed Components
 	void __fastcall Button3Click(TObject *Sender);
 	void __fastcall RadioButton4Click(TObject *Sender);
 	void __fastcall Button4Click(TObject *Sender);
+	void __fastcall RadioButton5Click(TObject *Sender);
 
 
 
