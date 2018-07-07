@@ -2,7 +2,7 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 354
+  ClientHeight = 330
   ClientWidth = 565
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -96,13 +96,6 @@ object Form2: TForm2
     Width = 44
     Height = 16
     Caption = 'Label12'
-  end
-  object Label13: TLabel
-    Left = 24
-    Top = 264
-    Width = 44
-    Height = 16
-    Caption = 'Label13'
   end
   object Edit1: TEdit
     Left = 123
@@ -261,7 +254,7 @@ object Form2: TForm2
     Width = 153
     Height = 24
     TabOrder = 18
-    Text = '456'
+    Text = 'ini_read'
     TextHint = '789'
     OnChange = RadioButton5Click
   end
@@ -270,11 +263,11 @@ object Form2: TForm2
     IPVersion = Id_IPv4
     Port = 0
     ReadTimeout = -1
-    Left = 16
-    Top = 304
+    Left = 24
+    Top = 280
   end
   object IdAntiFreeze1: TIdAntiFreeze
     Left = 88
-    Top = 304
+    Top = 280
   end
 end
