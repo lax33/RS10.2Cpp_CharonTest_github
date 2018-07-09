@@ -18,7 +18,6 @@
 class TForm2 : public TForm
 {
 __published:	// IDE-managed Components
-	TEdit *Edit1;
 	TIdTCPClient *IdTCPClient1;
 	TLabel *Label1;
 	TLabel *Label2;
@@ -48,9 +47,10 @@ __published:	// IDE-managed Components
 	TIdAntiFreeze *IdAntiFreeze1;
 	TEdit *Edit9;
 	TLabel *Label11;
-	TLabel *Label12;
 	TRadioButton *RadioButton5;
 	TEdit *Edit10;
+	TLabel *Label13;
+	TLabel *Label12;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall RadioButton1Click(TObject *Sender);
@@ -60,7 +60,8 @@ __published:	// IDE-managed Components
 	void __fastcall RadioButton4Click(TObject *Sender);
 	void __fastcall Button4Click(TObject *Sender);
 	void __fastcall RadioButton5Click(TObject *Sender);
-	
+
+
 
 
 

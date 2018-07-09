@@ -1,12 +1,12 @@
 
    #include <iostream>
    #include <string>
-   #include "TestCharonCppPCH1.h"
+   using namespace std;
 
 
 
-   char *pBuf = "s";   // Буфер передачи
+//   char* pBuf;   // Бу  р передачи
    int stop;           // Флаг нажатой кнопки "Стоп" 1-нажата 0-не нажата
+   wchar_t* ppBuf;
 
-
-
+	 char* pBuf;

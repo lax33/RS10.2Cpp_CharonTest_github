@@ -50,14 +50,16 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 		IdTCPClient1->ConnectTimeout = Edit5->Text.ToInt();
 
 		IdTCPClient1->Connect();
+		Label12->Caption="Удачно";
 
 		Label3->Caption=strlen(pBuf );
 
-		Edit1->Clear();
+		Label13->CleanupInstance();
 
 		IdTCPClient1->Socket->WriteLn(pBuf);
 
-		Edit1->Text = IdTCPClient1->Socket->ReadLn();
+		rBuf = UcToAscii(IdTCPClient1->Socket->ReadLn());
+		Label13->Caption = rBuf;
 
 		IdTCPClient1->Disconnect();
 
@@ -75,8 +77,9 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 
 void __fastcall TForm2::Button2Click(TObject *Sender)
 {
-	Edit1->Clear();
-    Label12->Caption="" ;
+	Label13->CleanupInstance();
+
+	Label12->Caption="" ;
 }
 //---------------------------------------------------------------------------
 
@@ -108,9 +111,10 @@ pBuf = "otau_get_channel";
 
  void __fastcall TForm2::RadioButton5Click(TObject *Sender)
 {
-pBuf = UcToAscii(Edit10->Text);
+//pBuf = UcToAscii(Edit10->Text);
+pBuf = Edit10->Text;
 }
-//------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 
 
 void __fastcall TForm2::Button3Click(TObject *Sender) // кнопка "Start"
@@ -135,11 +139,11 @@ void __fastcall TForm2::Button3Click(TObject *Sender) // кнопка "Start"
 		IdTCPClient1->ConnectTimeout = Edit5->Text.ToInt();
 
 		IdTCPClient1->Connect() ;
+		Label13->CleanupInstance();
 
-		Edit1->Clear();
 		IdTCPClient1->Socket->WriteLn(pBuf);
 
-		Edit1->Text = IdTCPClient1->Socket->ReadLn();
+		Label13->Caption = IdTCPClient1->Socket->ReadLn();
 
 		IdTCPClient1->Disconnect();
 
@@ -168,6 +172,8 @@ void __fastcall TForm2::Button4Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
   //nmn
+
+
 
 
 

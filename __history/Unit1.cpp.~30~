@@ -15,12 +15,18 @@ using namespace std;
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TForm2 *Form2;
-char* wctoansi(UnicodeString us) {
-
-
+//  преобразование из  UnicodeString в char.
+char* UcToAscii(UnicodeString us)
+ {
 	wchar_t* wstr = us.c_str();
 	char* ascii = new char[wcslen(wstr) + 1];
-	wctomb(ascii, *wstr);
+
+	unsigned int i;
+	for( i=0; i<=strlen(ascii); i++)
+	{
+	  ascii[i]=(char)wstr[i];
+	}
+
 	return ascii;
 }
 
@@ -44,22 +50,28 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 		IdTCPClient1->ConnectTimeout = Edit5->Text.ToInt();
 
 		IdTCPClient1->Connect();
+
 		Label3->Caption=strlen(pBuf );
 
 		Edit1->Clear();
+
 		IdTCPClient1->Socket->WriteLn(pBuf);
 
 		Edit1->Text = IdTCPClient1->Socket->ReadLn();
-
-		pBuf = "";
+//		Edit1->Text = IdTCPClient1->Socket->ReadLn(rBuf);
+//		Edit1->Text = IdTCPClient1->Socket->ReadString(rBuf);
 
 		IdTCPClient1->Disconnect();
-	   }
+
+	  }
+
 	 catch (...)
 	 {
 	   IdTCPClient1->Disconnect();
 	   Label12->Caption="Не удачно";
-     }
+	 }
+
+
 }
 //---------------------------------------------------------------------------
 
@@ -96,20 +108,7 @@ pBuf = "otau_get_channel";
 }
 //---------------------------------------------------------------------------
 
- void __fastcall TForm2::RadioButton5Click(TObject *Sender)
-{
-
-//pBuf = wctoansi(Edit10->Text);
-//pBuf = (char*)(Edit10->Text).c_str();
-//Label13->Caption=pBuf;
-UnicodeString ws = Edit10->Text;
-Buf=AnsiString(ws).c_str();
-
-//Label13->Caption=Edit10->Text;
- Label13->Caption=ws;
-
-}
-//---------------------------------------------------------------------------
+ 
 
 
 void __fastcall TForm2::Button3Click(TObject *Sender) // кнопка "Start"
@@ -167,6 +166,7 @@ void __fastcall TForm2::Button4Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
   //nmn
+
 
 
 

@@ -1,10 +1,22 @@
 [Stats]
-EditorSecs=294
-DesignerSecs=47
-InspectorSecs=1
-CompileSecs=32390
-OtherSecs=174
+<<<<<<< Updated upstream
+EditorSecs=2724
+DesignerSecs=458
+InspectorSecs=109
+CompileSecs=87533
+OtherSecs=567
 StartTime=06.07.2018 18:51:50
 RealKeys=0
 EffectiveKeys=0
-DebugSecs=1
+DebugSecs=1608
+=======
+EditorSecs=12226
+DesignerSecs=721
+InspectorSecs=354
+CompileSecs=573925
+OtherSecs=3042
+StartTime=26.06.2018 16:05:57
+RealKeys=0
+EffectiveKeys=0
+DebugSecs=9453
+>>>>>>> Stashed changes
