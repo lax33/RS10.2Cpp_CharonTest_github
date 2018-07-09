@@ -258,7 +258,7 @@ object Form2: TForm2
     Top = 96
     Width = 121
     Height = 24
-    Font.Charset = HEBREW_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Tahoma'

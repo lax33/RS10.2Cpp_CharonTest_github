@@ -111,8 +111,8 @@ pBuf = "otau_get_channel";
 
  void __fastcall TForm2::RadioButton5Click(TObject *Sender)
 {
-//pBuf = UcToAscii(Edit10->Text);
-pBuf = Edit10->Text;
+pBuf = UcToAscii(Edit10->Text);
+//pBuf = Edit10->Text;
 }
 //---------------------------------------------------------------------------
 
