@@ -1,14 +1,14 @@
 [Stats]
 <<<<<<< Updated upstream
-EditorSecs=2778
-DesignerSecs=422
-InspectorSecs=135
-CompileSecs=92835
-OtherSecs=615
-StartTime=06.07.2018 18:51:50
+EditorSecs=12155
+DesignerSecs=724
+InspectorSecs=354
+CompileSecs=568824
+OtherSecs=3218
+StartTime=26.06.2018 16:05:57
 RealKeys=0
 EffectiveKeys=0
-DebugSecs=4734
+DebugSecs=9406
 =======
 EditorSecs=12226
 DesignerSecs=721
